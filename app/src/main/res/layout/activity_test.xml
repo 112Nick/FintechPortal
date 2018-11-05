@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/test_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/customBlack"/>
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_below="@id/test_title"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            app:tabMode="scrollable"
+            app:tabGravity="fill">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_below="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_height="370dp">
+
+    </android.support.v4.view.ViewPager>
+
+   <Button
+           android:id="@+id/stop_button"
+           android:layout_below="@+id/viewPager"
+           android:layout_width="105dp"
+           android:layout_height="44dp"
+           android:layout_marginLeft="16dp"
+           android:background="@color/customWhite"
+           android:text="Завершить"/>
+
+    <Button
+            android:id="@+id/skip_button"
+            android:layout_below="@+id/viewPager"
+            android:layout_centerHorizontal="true"
+            android:layout_width="105dp"
+            android:layout_height="44dp"
+            android:background="@color/customWhite"
+            android:text="Пропустить"/>
+
+    <Button
+            android:id="@+id/answer_button"
+            android:layout_below="@+id/viewPager"
+            android:layout_alignParentEnd="true"
+            android:layout_width="105dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/customBlue"
+            android:textColor="@color/customWhite"
+            android:text="Ответить"/>
+
+</RelativeLayout>
