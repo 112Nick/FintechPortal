@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/customDarkGrey">
+
+    <ImageView
+            android:id="@+id/fintech_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/fintech_logo"/>
+
+    <EditText
+            android:id="@+id/login"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_below="@id/fintech_logo"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/customWhite"
+            android:textColorHint="@color/customWhite"
+            android:background="@color/customGrey"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:hint="ЛОГИН"/>
+
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/login"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:textColor="@color/customWhite"
+            android:textColorHint="@color/customWhite"
+            android:background="@color/customGrey"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:hint="ПАРОЛЬ"/>
+
+    <Button
+            android:id="@+id/enter_btn"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/customBlack"
+            android:background="@color/customYellow"
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+            tools:text="Войти"/>
+    
+    <TextView
+            android:id="@+id/forgot_password_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enter_btn"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/customWhite"
+            android:textSize="15sp"
+            android:text="Восстановить пароль"/>
+
+
+
+</RelativeLayout>
