@@ -1,9 +1,10 @@
-package ru.fintech.tinkoff.fintechportal
+package ru.fintech.tinkoff.fintechportal.ui
 
 import android.os.Bundle
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_test.*
+import ru.fintech.tinkoff.fintechportal.R
 
 class TestActivity : AppCompatActivity() {
 

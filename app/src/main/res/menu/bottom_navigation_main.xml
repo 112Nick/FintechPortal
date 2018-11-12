@@ -3,19 +3,19 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-            android:id="@+id/action_favorites"
+            android:id="@+id/nav_tests"
             android:enabled="true"
             android:icon="@drawable/navigation_studies_icon"
             android:title="Мои курсы"
             app:showAsAction="ifRoom" />
     <item
-            android:id="@+id/action_schedules"
+            android:id="@+id/nav_mock"
             android:enabled="true"
             android:icon="@drawable/navigation_event_icon"
             android:title="Мероприятия"
             app:showAsAction="ifRoom" />
     <item
-            android:id="@+id/action_music"
+            android:id="@+id/nav_profile"
             android:enabled="true"
             android:icon="@drawable/navigation_profile_icon"
             android:title="Профиль"

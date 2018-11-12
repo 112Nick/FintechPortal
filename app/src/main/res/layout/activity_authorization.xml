@@ -16,7 +16,7 @@
             android:background="@drawable/fintech_logo"/>
 
     <EditText
-            android:id="@+id/login"
+            android:id="@+id/email"
             android:layout_width="296dp"
             android:layout_height="56dp"
             android:layout_below="@id/fintech_logo"
@@ -27,13 +27,13 @@
             android:textAlignment="center"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"
-            android:hint="ЛОГИН"/>
+            android:hint="E-MAIL"/>
 
     <EditText
             android:id="@+id/password"
             android:layout_width="296dp"
             android:layout_height="56dp"
-            android:layout_below="@+id/login"
+            android:layout_below="@+id/email"
             android:layout_centerHorizontal="true"
             android:inputType="textPassword"
             android:textColor="@color/customWhite"
@@ -54,7 +54,7 @@
             android:background="@color/customYellow"
             android:textSize="20sp"
             android:layout_marginBottom="15dp"
-            tools:text="Войти"/>
+            android:text="Войти"/>
     
     <TextView
             android:id="@+id/forgot_password_btn"
