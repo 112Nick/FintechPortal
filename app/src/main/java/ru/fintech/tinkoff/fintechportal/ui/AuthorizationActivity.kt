@@ -31,9 +31,10 @@ class AuthorizationActivity : AppCompatActivity() {
         val prefs = getSharedPreferences(STORAGE_NAME, MODE_PRIVATE)
         val editor = prefs.edit()
 
-        if (!prefs.getBoolean(KEY_IS_FIRST, true)) {
-            startMainActivity()
-        }
+//        if (!prefs.getBoolean(KEY_IS_FIRST, true)) {
+//
+//            startMainActivity()
+//        }
 
 
 
@@ -56,7 +57,7 @@ class AuthorizationActivity : AppCompatActivity() {
                         val user = response.body()
                         editor.putBoolean(KEY_IS_FIRST, false)
                         editor.apply()
-                        startMainActivity()
+                        startMainActivity(user!!)
                         //TODO Database
 
                     } else {
@@ -88,8 +89,9 @@ class AuthorizationActivity : AppCompatActivity() {
 
     }
 
-    private fun startMainActivity() {
+    private fun startMainActivity(user : User) {
         val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("USER", user)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
         startActivity(intent)
     }
